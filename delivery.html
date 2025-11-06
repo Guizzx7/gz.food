@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio - GC.food</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1> Cardápio GC.food</h1>
+
+    <h2>Hambúrgueres</h2>
+    <div class="menu">
+      <div class="item">
+        <h3>X-Burguer</h3>
+        <p>Pão, carne, queijo e molho especial</p>
+        <p>R$ 20,00</p>
+        <button onclick="adicionar('X-Burguer', 20)">+ Adicionar</button>
+      </div>
+
+      <div class="item">
+        <h3>X-Salada</h3>
+        <p>Pão, carne, queijo, alface, tomate e maionese</p>
+        <p>R$ 22,00</p>
+        <button onclick="adicionar('X-Salada', 22)">+ Adicionar</button>
+      </div>
+
+      <div class="item">
+        <h3>Cheddar Burger</h3>
+        <p>Pão australiano, carne, cheddar e cebola caramelizada</p>
+        <p>R$ 25,00</p>
+        <button onclick="adicionar('Cheddar Burger', 25)">+ Adicionar</button>
+      </div>
+
+      <div class="item">
+        <h3>Frango Burger</h3>
+        <p>Pão, filé de frango, queijo e maionese especial</p>
+        <p>R$ 23,00</p>
+        <button onclick="adicionar('Frango Burger', 23)">+ Adicionar</button>
+      </div>
+    </div>
+
+    <h2>Bebidas</h2>
+    <div class="menu">
+      <div class="item"><h3>Refrigerante</h3><p>R$ 6,00</p><button onclick="adicionar('Refrigerante', 6)">+ Adicionar</button></div>
+      <div class="item"><h3>Água</h3><p>R$ 4,00</p><button onclick="adicionar('Água', 4)">+ Adicionar</button></div>
+      <div class="item"><h3>Suco de Laranja</h3><p>R$ 7,00</p><button onclick="adicionar('Suco de Laranja', 7)">+ Adicionar</button></div>
+      <div class="item"><h3>Suco de Uva</h3><p>R$ 7,00</p><button onclick="adicionar('Suco de Uva', 7)">+ Adicionar</button></div>
+      <div class="item"><h3>Cerveja</h3><p>R$ 9,00</p><button onclick="adicionar('Cerveja', 9)">+ Adicionar</button></div>
+      <div class="item"><h3>Energético</h3><p>R$ 10,00</p><button onclick="adicionar('Energético', 10)">+ Adicionar</button></div>
+    </div>
+
+    <div class="carrinho">
+      <h3>Carrinho 🛒</h3>
+      <ul id="itens"></ul>
+      <p id="total">Total: R$ 0,00</p>
+      <a href="endereco.html" class="btn">Finalizar Pedido</a>
+      <a href="index.html" class="btn voltar">⬅️ Voltar</a>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
